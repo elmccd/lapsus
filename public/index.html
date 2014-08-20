@@ -3,20 +3,52 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>Lapsus</title>
-    <link rel="stylesheet" href="bower_components/pure/pure-min.css"/>
-    <style>
-        body {
-            padding: 20px;
-        }
-        pre {
-            font-size: 12px;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="bower_components/ng-table/ng-table.css"/>
 </head>
 <body>
+<!-- Navigation -->
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Lapsus</a>
+    </div>
 
-<div ng-view></div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li>
+          <a href="#">Errors</a>
+        </li>
+        <li>
+          <a href="#">Errors</a>
+        </li>
+        <li>
+          <a href="#">Even more errors</a>
+        </li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container -->
+</nav>
 
+<!-- Page Content -->
+<div class="container-fluid">
+   <div ng-view></div>
+</div>
+<!-- /.container -->
+
+
+<script src="bower_components/underscore/underscore.js"></script>
 <script src="bower_components/angular/angular.js"></script>
 <script src="bower_components/angular-route/angular-route.js"></script>
 <script src="bower_components/restangular/dist/restangular.min.js"></script>

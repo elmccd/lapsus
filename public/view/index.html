@@ -1,0 +1,19 @@
+<p><strong>Page:</strong> {{tableParams.page()}}</p>
+<p><strong>Count per page:</strong> {{tableParams.count()}}</p>
+
+<table class="table table-striped" ng-table="tableParams">
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Type</th>
+    <th>Application</th>
+    <th>Date</th>
+  </tr>
+  <tr ng-repeat="item in items">
+    <td>{{item.id}}</td>
+    <td>{{item.name}}</td>
+    <td><span class="label label-danger">{{item.type}}</span></td>
+    <td>{{item.host}}</td>
+    <td>{{item.date}}</td>
+  </tr>
+</table>

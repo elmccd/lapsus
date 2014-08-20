@@ -6,9 +6,6 @@ angular.module('lapsus').config(function ($routeProvider, $locationProvider) {
     $routeProvider.when('/', {
         controller: 'IndexController',
         templateUrl: 'view/index.html'
-    }).when('/login', {
-        controller: 'LoginController',
-        templateUrl: 'view/login.html'
     });
 
     $locationProvider.html5Mode(false);
@@ -16,11 +13,7 @@ angular.module('lapsus').config(function ($routeProvider, $locationProvider) {
 
 });
 
-angular.module('lapsus').controller('IndexController', function ($scope, $http) {
-
-});
-
-angular.module('lapsus').controller('LoginController', function ($scope, Restangular) {
+angular.module('lapsus').controller('IndexController', function ($scope, Restangular) {
 
     $scope.form = {};
 
